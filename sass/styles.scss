@@ -612,20 +612,15 @@ body{
 
         .salary-chart{
           float:right;
-          @include borderhelper();
+          //@include borderhelper();
           width:47%;
+          border:1px solid blue;
           height:300px;
 
-          .chart{
-            border:1px solid red;
-            .item{
-              border:1px solid blue;
-              width:40px;
-              height:100px;
-            }
+          #myChart{
+            margin:auto;
+            border:1px solid yellow;
           }
-
-
         }
 
       }

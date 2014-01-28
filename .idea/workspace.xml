@@ -4,12 +4,12 @@
     <list default="true" id="bdab9eca-1bd4-4d41-9439-55c420dcc04b" name="Default" comment="" />
     <ignored path="jobafteruni.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1390941837015" ignored="false" />
+    <file path="/index.html" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1390949931781" ignored="false" />
     <file path="/style.css" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1388615511159" ignored="false" />
     <file path="/Dummy.txt" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1387879633125" ignored="false" />
-    <file path="/main.js" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1390941860796" ignored="false" />
+    <file path="/main.js" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1390950805718" ignored="false" />
     <file path="/index_testing_job_selection.html" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1389051886390" ignored="false" />
-    <file path="/styles.scss" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1390940742531" ignored="false" />
+    <file path="/styles.scss" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1390947335078" ignored="false" />
     <file path="/jquery-ui.css" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1389738934437" ignored="false" />
     <file path="/indexNew.html" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1390940409562" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,13 +30,13 @@
     <favorites_list name="jobafteruni" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5576172">
+    <splitter split-orientation="horizontal" split-proportion="0.6429268">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="149" column="0" selection-start="4476" selection-end="4476" vertical-scroll-proportion="0.0">
+                <state line="299" column="13" selection-start="9698" selection-end="9743" vertical-scroll-proportion="-10.423077">
                   <folding />
                 </state>
               </provider>
@@ -45,7 +45,7 @@
           <file leaf-file-name="indexNew.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/indexNew.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="88" column="27" selection-start="0" selection-end="12247" vertical-scroll-proportion="0.0">
+                <state line="88" column="27" selection-start="0" selection-end="12247" vertical-scroll-proportion="-0.65384614">
                   <folding />
                 </state>
               </provider>
@@ -54,7 +54,7 @@
           <file leaf-file-name="jquery-ui.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sass/jquery-ui.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="494" column="63" selection-start="11421" selection-end="11421" vertical-scroll-proportion="0.0">
+                <state line="501" column="38" selection-start="11514" selection-end="11514" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -63,7 +63,7 @@
           <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sass/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="421" column="0" selection-start="13558" selection-end="13558" vertical-scroll-proportion="0.0">
+                <state line="419" column="0" selection-start="13401" selection-end="13401" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -81,7 +81,7 @@
           <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="86" column="24" selection-start="2398" selection-end="2398" vertical-scroll-proportion="0.61904764">
+                <state line="101" column="65" selection-start="2774" selection-end="2774" vertical-scroll-proportion="0.35123968">
                   <folding />
                 </state>
               </provider>
@@ -94,7 +94,7 @@
           <file leaf-file-name="styles.scss" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="604" column="18" selection-start="12397" selection-end="12397" vertical-scroll-proportion="0.044973545">
+                <state line="0" column="23" selection-start="17" selection-end="23" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -117,9 +117,9 @@
         <option value="$PROJECT_DIR$/index_testing_job_selection.html" />
         <option value="$PROJECT_DIR$/sass/jquery-ui.css" />
         <option value="$PROJECT_DIR$/indexNew.html" />
+        <option value="$PROJECT_DIR$/sass/styles.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/main.js" />
-        <option value="$PROJECT_DIR$/sass/styles.scss" />
       </list>
     </option>
   </component>
@@ -174,6 +174,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jobafteruni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jobafteruniversity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jobafteruni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jobafteruniversity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chart.js-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jobafteruni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jobafteruniversity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chart.js-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -211,15 +265,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="774" extended-state="1" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18456642" sideWeight="0.6714976" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18456642" sideWeight="0.84219" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15780999" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -340,6 +394,11 @@
         <state line="6" column="20" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/jquery.sticky.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="31" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.796875" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sass/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="43" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
@@ -347,49 +406,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/jquery-ui.css">
+    <entry file="file://$PROJECT_DIR$/sass/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="494" column="63" selection-start="11421" selection-end="11421" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="421" column="0" selection-start="13558" selection-end="13558" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/jquery.sticky.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="31" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.796875" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/indexNew.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="27" selection-start="0" selection-end="12247" vertical-scroll-proportion="0.0">
+        <state line="0" column="23" selection-start="17" selection-end="23" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="0" selection-start="4476" selection-end="4476" vertical-scroll-proportion="0.0">
+        <state line="299" column="13" selection-start="9698" selection-end="9743" vertical-scroll-proportion="-10.423077">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/styles.scss">
+    <entry file="file://$PROJECT_DIR$/indexNew.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="604" column="18" selection-start="12397" selection-end="12397" vertical-scroll-proportion="0.044973545">
+        <state line="88" column="27" selection-start="0" selection-end="12247" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/jquery-ui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="501" column="38" selection-start="11514" selection-end="11514" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="419" column="0" selection-start="13401" selection-end="13401" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="24" selection-start="2398" selection-end="2398" vertical-scroll-proportion="0.61904764">
+        <state line="101" column="65" selection-start="2774" selection-end="2774" vertical-scroll-proportion="0.35123968">
           <folding />
         </state>
       </provider>

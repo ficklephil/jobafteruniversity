@@ -71,18 +71,41 @@ $( "#career-input" ).autocomplete({
         getExtendedJobInfomation(soc);
         getSkillsShortages(soc,1);
         getUnemployment(soc);
+        getWorkFuture(soc);
+
 
         scrollToStart();
+
 
 //        $('.search').scrollTo(500);
 //        scrollToAnchor('.career-data');
     },
     open: function() {
+        console.log('open');
 //        $( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
     },
     close: function() {
+
+        console.log('close');
 //        $( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
+    },
+    change: function(){
+      console.log('change');
+    },
+
+    focus: function(event, ui){
+        console.log('focus');
+
+        console.log('Soc code of selected item is ' + ui.item.soc);
+        var soc = ui.item.soc;
+
+        //think about putting work futures in here when finished.
+        //getWorkFuture(soc);
+
+
+
     }
+
 });
 
 
@@ -300,16 +323,19 @@ function getEstimatedPay(soc){
 }
 
 function getWorkFuture(soc){
+    console.log('get work futures');
     $.ajax({
         type: 'GET',
-        url: 'http://api.lmiforall.org.uk/api/v1/wf/predict?soc=3114&minYear=2013&maxYear=2020',
+        url: 'http://api.lmiforall.org.uk/api/v1/wf/predict?soc='+soc+'&minYear=2013&maxYear=2020',
         async: false,
         contentType: "application/json",
         dataType: 'jsonp',
         success: function(json) {
-            console.log('Work Future : ' + JSON.stringify(json));
+//            console.log('Work Future : ' + JSON.stringify(json));
+            drawChart(createDataForChart(json));
 
-           ractive.set('workFutureJobs', json.predictedEmployment[3].employment)
+
+//           ractive.set('workFutureJobs', json.predictedEmployment[3].employment)
         },
         error: function(e) {
             console.log(e.message);
@@ -320,10 +346,67 @@ function getWorkFuture(soc){
 
 function scrollToStart(){
     console.log('scrolling');
-    $('html, body').animate({
-        scrollTop: $("#start-content").offset().top
-    }, 1000);
+//    $('html, body').animate({
+//        scrollTop: $("#start-content").offset().top
+//    }, 1000);
 }
 
 //scrollToStart();
+//drawChart();
 
+function createDataForChart(json){
+    console.log(JSON.stringify(json));
+
+    //for each item.year add a year to the 'labels'
+    //for each item.employment add a data to the dataset
+
+    var year=[];
+    var predictedNumberEmployed=[];
+
+    for(var i=0;i<json.predictedEmployment.length;i++){
+        year.push(json.predictedEmployment[i].year);
+
+        console.log('predicted employment employment' + json.predictedEmployment[i].employment );
+        predictedNumberEmployed.push(parseInt(json.predictedEmployment[i].employment));
+
+        console.log('parse int' + parseInt(json.predictedEmployment[i].employment));
+        //convert to number
+
+
+
+
+    }
+
+
+
+
+    var data = {
+        labels : year,
+        datasets : [
+            {
+                fillColor : "rgba(255,204,0,0.45)",
+//                fillColor : "rgba(220,220,220,0.5)",
+                strokeColor : "#1b1b1b",
+                pointColor : "#CE0043",
+                pointStrokeColor : "#fff",
+                data : predictedNumberEmployed
+            },
+        ]
+    }
+
+    return data;
+}
+
+function drawChart(data){
+    //Get the context of the canvas element we want to select
+    var ctx = document.getElementById("myChart").getContext("2d");
+
+
+
+    var options = {
+        bezierCurve : false
+    }
+
+        var myNewChart = new Chart(ctx).Line(data,options);             //watch out here for memory issues
+
+}

@@ -388,13 +388,11 @@ body {
         .career-data-container .career-data .career-data-item .career-data-dual-item-content .salary-chart {
           float: right;
           width: 47%;
+          border: 1px solid blue;
           height: 300px; }
-          .career-data-container .career-data .career-data-item .career-data-dual-item-content .salary-chart .chart {
-            border: 1px solid red; }
-            .career-data-container .career-data .career-data-item .career-data-dual-item-content .salary-chart .chart .item {
-              border: 1px solid blue;
-              width: 40px;
-              height: 100px; }
+          .career-data-container .career-data .career-data-item .career-data-dual-item-content .salary-chart #myChart {
+            margin: auto;
+            border: 1px solid yellow; }
     .career-data-container .career-data .skills-shortages-container {
       border: 1px solid red;
       width: 47%;
