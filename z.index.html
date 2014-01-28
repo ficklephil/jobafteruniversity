@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang='en-GB'>
+	<head>
+		<meta charset='utf-8'>
+		<title>Job After Uni</title>
+
+        <link href='css/style.css' rel='stylesheet' type='text/css'>
+
+	</head>
+	<body>
+        <!-- Header -->
+        <div class='header'>
+            <div class='logo-container'>
+                <h1>Jobafteruni</h1>
+            </div>
+        </div>
+        <!-- !Header -->
+
+        <div class='site-description-container'>
+            <div class='site-description'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam in eros et ornare.
+                Sed facilisis sagittis erat, et fringilla ligula sodales id. Duis pretium ipsum tellus,
+                et mollis neque dictum eu. Sed feugiat placerat egestas. Aenean eros libero, luctus vel
+                accumsan sit amet, suscipit quis orci. Nullam nec neque magna. Curabitur sed accumsan est,
+                ac vehicula mi. Praesent posuere tempus augue eget volutpat.
+            </div>
+        </div>
+
+
+        <!-- Container -->
+        <div id='container'></div>
+        <!-- !Container -->
+
+
+		<script id='myTemplate' type='text/ractive'> 
+			<p>{{greeting}},{{recipient}}!</p>
+
+
+            <div class='search'>
+                <div class='search-buttons'>
+
+
+                    <div class='column left'>
+                        <div class='cell'>
+                            What job do you want to do after finishing uni?
+                        </div>
+                        <div class='cell'>
+                            <!--<input class='search-input' value='3119' type='text' name='job-name'>-->
+                            <select class='search-input'>
+                                <option value="3114">Building and civil engineering technicians</option>
+                                <option value="2319">Teaching and other educational professionals n.e.c.</option>
+                                <option value="5314">Plumbers and heating and ventilating engineers</option>
+                                <option value="3415">Musicians</option>
+                                <option value="2136">Programmers and software development professionals</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class='column left'>
+                        <div class='cell'>
+                            What year do you finish uni?
+                        </div>
+                        <div class='cell select-graduation-year'>
+                            <select>
+                                <option value="volvo">2013</option>
+                                <option value="saab">2014</option>
+                                <option value="opel">2015</option>
+                                <option value="audi">2016</option>
+                                <option value="audi">2017</option>
+                                <option value="audi">2018</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class='column left'>
+                        <div class='cell'>
+
+                        </div>
+                        <div class='cell'>
+                            Set Location
+                        </div>
+                    </div>
+
+                    <div class='column left'>
+                        <div class='cell'>
+
+                        </div>
+                        <div class='cell'>
+                            <button on-click='search'>Go</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class='job-selection'>
+
+                 hello
+            </div>
+
+            <div class='results'>
+
+
+
+
+                <div>description?</div>
+                <div>tasks?</div>
+                <div>Estimated Pay : {{estimatedPay}}</div>
+                <div>Job Title : {{jobTitle}}</div>
+                <div>Qualifications Required : {{qualificationsRequired}}</div>
+            </div>
+
+            <div>
+                <div>Work Future</div>
+
+                <div>By the time you finish university there will be {{workFutureJobs}} more jobs in the LDN region, that's an increase,
+                of 14%.</div>
+
+            </div>
+
+
+
+
+
+
+		</script>
+
+
+
+        <script src='http://code.jquery.com/jquery-1.10.1.min.js'></script>
+		<script src='src/Ractive.js'></script>
+		<script src='src/main.js'></script>
+
+		
+	</body>
+
+
+</html>

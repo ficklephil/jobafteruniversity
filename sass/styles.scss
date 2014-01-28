@@ -1,0 +1,678 @@
+$primary-color: #CE0043;
+$lightest-color:#ffffff;
+
+$input-border-colour:#d5d5d5;
+$search-text-color:#818487;
+
+
+
+$background-color-light:#F8F8F8 ;
+$background-color-medium:#EFEFEF;
+$background-color-dark:#655656;
+$background-color-question:#F0F0F0;
+$background-color-box:#ffffff;
+
+$title-background-color:#1b1b1b;
+$title-text-color:#cccccc;
+$title-description-background-color:#333333;
+
+$border:1px solid lightgrey;
+
+$career-width:680px;
+$graduation-date-width:160px;
+$region-width:210px;
+
+@mixin roboto-light() {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+@mixin pacifico(){
+  font-family: 'Pacifico', cursive;
+}
+
+@mixin borderhelper(){
+  //border:1px solid red;
+}
+
+@mixin gradient(){
+  background: #f0f0f0; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f0f0f0 0%, #ffffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f0f0), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #f0f0f0 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #f0f0f0 0%,#ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #f0f0f0 0%,#ffffff 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #f0f0f0 0%,#ffffff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin gradientGray(){
+  background: #666666; /* Old browsers */
+  background: -moz-linear-gradient(top,  #666666 0%, #ffffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#666666), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #666666 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #666666 0%,#ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  666666 0%,#ffffff 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #666666 0%,#ffffff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+h2{
+  font-weight: 300;
+  font-size: 2em;
+}
+
+h1{
+  font-weight: 100;
+  font-size: 2em;
+}
+
+h3{
+  font-weight: 100;
+  font-size: 1.2em;
+}
+
+body{
+
+  text-align: center;
+  padding:0px 0px 0px 0px;
+  margin:0px 0px 0px 0px;
+  background:$background-color-light;
+
+  @include roboto-light();
+  font-weight: 100;
+}
+
+.header {
+  top:0;
+  position: fixed;
+  width:100%;
+  height:67px;
+  background-color:$lightest-color;
+  border-bottom:$border;
+
+  .set-region{
+    border:1px solid green;
+    float:right;
+    margin-right: 25px;
+    margin-top:17px;
+  }
+
+  .newlogo{
+    border:1px solid red;
+    width:170px;
+    height:100px;
+    float:left;
+  }
+
+  .logo{
+    background-color:$primary-color;
+    color:$lightest-color ;
+    width:200px;
+    height:99%;
+    margin-left: 15px;
+    padding-top: 1px;
+
+
+
+    h1{
+      //font: times;
+      //margin-top: 0;
+      font-weight: 300;
+    }
+  }
+}
+
+.centerlogo{
+  //border:1px solid red;
+  height:189px;
+  width:480px;
+  margin:auto;
+  background-image:url('../images/logo.jpg');
+  background-repeat: no-repeat;
+  margin-top: 150px;
+  margin-bottom: 35px;
+}
+
+.footer{
+  margin-top:30px;
+  border-top:1px solid lightgray;
+  //background-color:$lightest-color;
+  height:50px;
+  width:100%;
+}
+
+.ui-corner-all{
+  border:0px;
+  border-top-left-radius:0px;
+  border-top-right-radius:0px;
+  border-bottom-left-radius:0px;
+  border-bottom-right-radius:0px;
+}
+
+.ui-widget-content{
+  margin-top: 10px;
+  border:0px solid red;
+  background-color: #efefef;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  border: 1px solid #efefef;
+  background: #343434;
+  font-weight: 100;
+  color: #efefef;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+  border: 1px solid #aaaaaa;
+  background: #ffffff;
+  font-weight: 100;
+  color: #212121;
+}
+
+.ui-menu .ui-menu-item a.ui-state-focus,
+.ui-menu .ui-menu-item a.ui-state-active {
+  font-weight: 100;
+  margin: -1px;
+}
+
+.ui-menu .ui-menu-item{
+  border-bottom:1px solid #f0f0f0;
+  background-color:#1b1b1b;
+  width:$career-width;
+  text-align: left;
+
+  a{
+    @include roboto-light();
+    color:#efefef;
+    font-size: 1em;
+    height:40px;
+    //text-align: left;
+    padding-top: 16px;
+    padding-left: 17px;
+  }
+
+  a:link {
+    @include roboto-light();
+    color:#ffcc00;
+    font-size: 1em;
+    height:40px;
+    //text-align: left;
+    padding-top: 16px;
+    padding-left: 17px;
+  }
+
+  a:visited {
+    @include roboto-light();
+    color:#ffcc00;
+    font-size: 1em;
+    height:40px;
+    //text-align: left;
+    padding-top: 16px;
+    padding-left: 17px;
+  }
+
+  a:hover {
+    @include roboto-light();
+    color:#ffcc00;
+    font-size: 1em;
+    height:40px;
+    //text-align: left;
+    padding-top: 16px;
+    padding-left: 17px;
+  }
+
+  a:active {
+    @include roboto-light();
+    color:#ffcc00;
+    font-size: 1em;
+    height:40px;
+    //text-align: left;
+    padding-top: 16px;
+    padding-left: 17px;
+  }
+
+  a:selected {
+    @include roboto-light();
+    color:#ffcc00;
+    font-size: 1em;
+    height:40px;
+    //text-align: left;
+    padding-top: 16px;
+    padding-left: 17px;
+  }
+
+}
+
+
+
+.search{
+
+  //min-width:800px;
+  //position: fixed;
+  //top:0;
+  border:1px solid blue;
+  //width:1200px;
+  margin-left: 200px;
+
+  width:73%;
+  //max-width: 1500px;
+  min-width: 920px;
+  //margin: auto;
+  //padding-left: 33px;
+  //@include borderhelper();
+  //height: 100px;
+  //margin-bottom: 100px;
+  text-align: left;
+  //margin-top:12px;
+
+
+  @mixin input-border(){
+    float:left;
+    height: 36px;
+    width: 6px;
+    margin-top: 68px;
+    background-color:$input-border-colour;
+  }
+
+  .title{
+    @include roboto-light();
+    height:35px;
+    padding-top: 10px;
+    //border:1px solid blue;
+    background-color:$background-color-question;
+    color:$search-text-color;
+    font-weight: 300;
+    padding-left: 17px;
+  }
+
+  .ui-autocomplete{
+    border:10px solid blue;
+    text-align: left;
+  }
+
+
+
+
+  input{
+    @include roboto-light();
+    font-size: 1.6em;
+    //width:90%;
+    height:50px;
+    background: transparent;
+    color:$search-text-color;
+    padding-left: 17px;
+  }
+
+  .input-border-left{
+    @include input-border();
+  }
+
+  .input-border-right{
+    @include input-border();
+    margin-right:25px;
+  }
+
+  .career-field-container{
+
+    @include borderhelper();
+    //height:100px;
+    //width:100px;//NOT SURE WHY THIS GOES UP AND DOWN HERE POSSIBLE IE issue too
+
+    .career-field{
+      @include borderhelper();
+      float:left;
+     //width:56%;
+     width:$career-width;
+      border-bottom: 7px solid $input-border-colour;
+
+      input{
+        @include gradient();
+        width:$career-width - 17;
+        @include borderhelper();
+        float:left;
+        border:0px solid red;
+      }
+    }
+  }
+
+  .career-field-container:hover {
+
+    .input-border-left{
+      background-color:$primary-color;
+    }
+
+    .input-border-right{
+      background-color:$primary-color;
+    }
+
+    .career-field{
+      border-bottom: 7px solid $primary-color;
+    }
+  }
+
+
+
+
+
+
+  .graduate-date-field-container{
+
+    .graduate-date-field{
+      float:left;
+      //width:16%;
+      width:$graduation-date-width;
+      @include borderhelper();
+      //margin-right: 25px;
+      border-bottom: 7px solid $input-border-colour;
+
+
+      input{
+
+        @include gradient();
+        width:$graduation-date-width - 17;
+        border:0px solid red;
+      }
+
+
+    }
+  }
+
+  .graduate-date-field-container:hover{
+
+    .input-border-left{
+      background-color:$primary-color;
+    }
+
+    .input-border-right{
+      background-color:$primary-color;
+    }
+
+    .graduate-date-field{
+      border-bottom: 7px solid $primary-color;
+    }
+
+    input{
+     border:0px solid red;
+    }
+  }
+
+  input:focus{
+
+    outline: 0px solid red;
+    color:$primary-color;
+  }
+
+
+
+  .region-field-container{
+    //width:32%;
+
+
+    .region-field{
+      width:$region-width;
+      //width:16%;
+      @include borderhelper();
+      float:left;
+      border-bottom: 7px solid $input-border-colour;
+    }
+
+    input{
+      @include gradient();
+      //width:318px;
+      //width:90%;
+      width:$region-width - 17;
+      float:left;
+      border:0px solid red;
+    }
+  }
+
+  .region-date-field-container:hover{
+
+    .input-border-left{
+      background-color:#666666;
+    }
+
+    .input-border-right{
+      background-color:#666666;
+    }
+
+    .region-date-field{
+      border-bottom: 7px solid #666666;
+    }
+
+    input{
+      border:0px solid red;
+    }
+  }
+}
+
+.strapline{
+    @include pacifico();
+  font-size: 1.6em;
+  color:$primary-color;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.site-description-container{
+
+  border-top:1px solid lightgrey;
+  padding-top: 30px;
+  text-align: left;
+  font-weight: 300;
+  font-size: 1em;
+  background-color: $background-color-medium;
+  color: #676767;
+
+  .site-description{
+    @include borderhelper();
+    height: 325px;
+    width:85%;
+    margin: auto;
+
+    .column-left{
+      @include borderhelper();
+      //height: 400px;
+      width: 48%;
+      float:left;
+      //margin-right: 75px;
+    }
+
+    .column-right{
+      @include borderhelper();
+      float:right;
+      //height: 400px;
+      width: 48%;
+
+      .slogan{
+        color: $primary-color;
+      }
+
+    }
+
+  }
+}
+
+.career-data-container{
+  max-width: 1800px;
+
+  //border:1px solid red;
+  @include borderhelper();
+  background: #efefef; /* Old browsers */
+  background: -moz-linear-gradient(top,  #efefef 0%, #ffffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #efefef 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #efefef 0%,#ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #efefef 0%,#ffffff 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #efefef 0%,#ffffff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+  .career-data{
+    width:90%;
+    margin: auto;
+    //border:1px solid blue;
+    text-align: left;
+    @include borderhelper();
+
+    .title{
+      //border:1px solid gold;
+      @include borderhelper();
+      padding-top: 1px;
+      padding-bottom: 1px;
+      //padding-left: 28px;
+      padding-right: 0px;
+      text-align: center;
+      color:$primary-color;
+
+    }
+
+    .career-data-item{
+      @include borderhelper();
+      background-color:$lightest-color;
+      padding: 0px 10px 10px 10px;
+      margin-top: 70px;
+
+      .career-data-item-header{
+        //@include borderhelper();
+        border:1px solid red;
+        height:121px;
+
+        .title{
+          float:left;
+          @include pacifico();
+          @include borderhelper();
+          color:$title-text-color;
+          background-color:$title-background-color;
+          padding: 2px 25px 9px 20px;
+        }
+
+        .description{
+          float:left;
+          @include borderhelper();
+          //padding-left: 25px;
+          //padding-top: 41px;
+          padding: 41px 0px 0px 25px;
+          font-size: 1.7em;
+          font-weight: 100;
+        }
+      }
+
+      .career-data-item-content{
+        @include borderhelper();
+        padding: 25px 55px 25px 55px;
+        background-color:$title-description-background-color;
+        font-size: 1.5em;
+        font-weight: 100;
+        color: #cccccc ;
+      }
+
+      .career-data-dual-item-content{
+
+        border:1px solid red;
+
+        .test-div{
+          border:1px solid blue;
+          //height:200px;
+          width:45%;
+        }
+
+        .test-div-2{
+          border:1px solid yellow;
+          //height:200px;
+          width:45%;
+        }
+
+        //height:358px;
+        .salary-data{
+          float:left;
+          @include borderhelper();
+          width:42%;
+          //height:300px;
+          background-color:$primary-color;
+          color:#efefef;
+          //padding: 100px 25px 25px 25px;
+          font-size: 1.5em;
+          //position: relative;
+          //display: inline-block;
+          padding-left: 50px;
+          padding-top: 80px;
+          padding-right: 50px;
+          padding-bottom: 100px;
+
+
+        }
+
+        .salary-chart{
+          float:right;
+          @include borderhelper();
+          width:47%;
+          height:300px;
+
+          .chart{
+            border:1px solid red;
+            .item{
+              border:1px solid blue;
+              width:40px;
+              height:100px;
+            }
+          }
+
+
+        }
+
+      }
+
+
+
+    }
+
+    .skills-shortages-container{
+
+      border:1px solid red;
+      width:47%;
+      //height: 235px;
+      margin-left:42px;
+      background-color:#cccccc ;
+      margin-top: 27px;
+
+
+
+      .number{
+        float:left;
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+        margin-top: 70px;
+        margin-left: 35px;
+        background-color: $lightest-color;
+
+        p{
+          margin-left: 23px;
+          margin-top: 27px;
+          font-size: 1.7em;
+          color:#343434;
+        }
+      }
+
+      .content{
+        float:right;
+        //border:1px solid blue;
+        width:66%;
+        //height: 100%;
+        padding: 7px 0px 10px 24px;
+        font-size: 1.2em;
+
+
+      }
+
+    }
+  }
+}

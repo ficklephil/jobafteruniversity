@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,500' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <!--<link rel="stylesheet" href="sass/jquery-ui.css">-->
+
+    <meta charset='utf-8'>
+    <title>Job After Uni</title>
+
+    <link href='sass/styles.css' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<!-- Header -->
+<!--<div class='header'>-->
+<!--&lt;!&ndash;<div class='logo'>&ndash;&gt;-->
+<!--&lt;!&ndash;<h1 class='jobafteruni'>Jobafteruni</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--</div>-->
+<!-- !Header -->
+
+<!-- Strapline -->
+<!--<div class='strapline'>-->
+<!--<h1>'Will I get a job when I finish university'</h1>-->
+<!--</div>-->
+<!-- !Strapline -->
+
+
+
+<!-- Container -->
+<div id='container'></div>
+<!-- !Container -->
+
+<!-- Footer -->
+<div class='footer'>
+    <div class='copyright'>2014</div>
+</div>
+<!-- Footer -->
+
+<script id='myTemplate' type='text/ractive'>
+
+<div class='header'>
+
+    <div class='newlogo'>
+
+        h
+    </div>
+
+    <!-- Search -->
+    <div class='search'>
+
+        <!-- Career Field Input -->
+        <div class='career-field-container'>
+            <div class='input-border-left'></div>
+            <div class='career-field'>
+                <div class='title'>
+                    What would you like to do after university?
+                </div>
+                <div class='input-container'>
+                    <input id="career-input" type='text'>
+                </div>
+            </div>
+            <div class='input-border-right'></div>
+        </div>
+        <!-- !Career Field Input -->
+
+        <!-- Graduate Field Input -->
+        <div class='graduate-date-field-container'>
+            <div class='input-border-left'></div>
+            <div class='graduate-date-field'>
+                <div class='title'>
+                    Graduation year?
+                </div>
+                <div class='cell'>
+                    <input id='graduation-input' type='text' value="2017">
+                </div>
+            </div>
+            <div class='input-border-right'></div>
+        </div>
+        <!-- !Graduate Field Input -->
+
+        <!-- Region Field Input -->
+        <!--<div class='region-field-container'>-->
+        <!--<div class='input-border-left'></div>-->
+        <!--<div class='region-field'>-->
+        <!--<div class='title'>-->
+        <!--Region?-->
+        <!--</div>-->
+        <!--<div class='cell'>-->
+        <!--<input class='search-input' value='London' type='text' name='job-name'>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class='input-border-right'></div>-->
+        <!--</div>-->
+        <!-- Region Field Input -->
+
+
+
+    </div>
+    <!-- !Search -->
+
+    <div class='set-region'>
+
+        Set Region
+    </div>
+
+
+
+</div>
+
+<div class='centerlogo'>
+
+
+</div>
+
+
+
+<!-- Site Description -->
+<div class='site-description-container'>
+    <div class='site-description'>
+        <div class='column-left'>
+            <p>When I was a graduate I had no idea of whether I would get a job or not when I came out
+                of university. This website will give you some useful information about :
+            </p>
+            <ul>
+                <li>What competition you face</li>
+                <li>If the job market for a career will have increased by the time your out of uni.</li>
+                <li>if you will be able to support yourself finacially from the degree you take.</li>
+                <li>if you will be able to put enough money aside to put down a deposit on a house
+                    or a flat when you come out of uni.</li>
+            </ul>
+        </div>
+        <div class='column-right'>
+            <p>This website will help you make an informed choice on the career which you may
+                undertake and the learning options you choose to get there. But at the end of the day
+                you maybe passionate about an area, therefore we give you more career options incase that
+                career is in decline while your at university.</p>
+            <p class='slogan'>Empower yourself with the knowledge!</p>
+        </div>
+    </div>
+    <div style='clear:both;'></div>
+</div>
+<!-- !Site Description -->
+
+<!-- Career Data -->
+
+<div id='start-content'></div>
+
+<div class='career-data-container'>
+    <div class='career-data'>
+        <div class='title'>
+            <h1>{{jobTitle}}</h1>
+        </div>
+
+        <!-- Career Data Item -->
+        <div class='career-data-item'>
+            <div class='career-data-item-header'>
+                <div class='title'>
+                    <h2>Qualifications</h2>
+                </div>
+                <div class='description'>
+                    <!--of {{jobTitle}}-->
+                </div>
+            </div>
+            <div class='career-data-item-content'>
+                <p>{{qualificationsRequired}}</p>
+            </div>
+        </div>
+        <!-- !Career Data Item -->
+
+        <!-- Career Data Item -->
+        <div class='career-data-item'>
+            <div class='career-data-item-header'>
+                <div class='title'>
+                    <h2>Career Future</h2>
+                </div>
+                <div class='description'>
+                    graduating in 2017
+                </div>
+            </div>
+
+            <div class='career-data-dual-item-content'>
+
+                <div class='salary-data'><p>While your at university the amount of {{jobTitle}}
+                    roles would of increased by 14% in London.</p></div>
+                <div class='salary-chart'>
+
+                    <div class='chart'>
+                        <div class='item'></div>
+                    </div>
+
+
+
+                    <table border="1">
+                        <tr>
+                            <th>Year</th>
+                            <th>Percentage Change</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                2014
+                            </td>
+                            <td>
+                                +3
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2015
+                            </td>
+                            <td>
+                                +7
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2016
+                            </td>
+                            <td>
+                                +9
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+
+                <div style='clear:both'></div>
+            </div>
+
+        </div>
+        <!-- !Career Data Item -->
+
+        <!-- Extra Career Data Info Item -->
+        <div class='skills-shortages-container'>
+            <div class='number'>
+                <p>{{skillsShortage}}%</p>
+            </div>
+            <div class='content'>
+                <h3>There is a current skills shortage of {{percentSkillsShortages}}% in this area, and a
+                    hard to fill job rate of {{percentHardToFill}}% and the percentage hard to fill due
+                    to skills shortages in London is {{percentHardToFillIsSkillsShortages}}% </h3>
+                <p>Skills shortages in an area means that there are not enough
+                    skilled workers for the amounth of jobs in the region you are in.</p>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+        <!-- !Extra Career Data Info Item -->
+        <!-- Extra Career Data Info Item -->
+        <div class='skills-shortages-container'>
+            <div class='number'>
+                <p>{{unemploymentRate}}%</p>
+            </div>
+            <div class='content'>
+                <h3>There is a current unemployment rate of {{unemploymentRate}}% in 2012 uk wide</h3>
+                <p>This means for every 100 software developer {{unemploymentRate}} are unemployed.</p>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+        <!-- !Extra Career Data Info Item -->
+
+
+
+
+    </div>
+</div>
+
+
+
+
+<!--!Career Data -->
+
+<!--<div class='job-selection'>-->
+
+<!--{{#jobs:num}}-->
+<!--<div><button on-click='select-job' value="{{soc}}">{{name}}</button></div>-->
+<!--&lt;!&ndash;<div>Index: {{num}} and name is : {{name}}</div>&ndash;&gt;-->
+<!--{{/jobs}}-->
+<!--</div>-->
+<!--<div class='results'>-->
+<!--<div>description?</div>-->
+<!--<div>tasks?</div>-->
+<!--<div>Estimated Pay : {{estimatedPay}}</div>-->
+<!--<div>Job Title : {{jobTitle}}</div>-->
+<!--<div>Qualifications Required : {{qualificationsRequired}}</div>-->
+<!--</div>-->
+
+<!--<div>-->
+<!--<div>Work Future</div>-->
+
+<!--<div>By the time you finish university there will be {{workFutureJobs}} more jobs in the LDN region, that's an increase,-->
+<!--of 14%.</div>-->
+<!--</div>-->
+
+</script>
+<script src='http://code.jquery.com/jquery-1.10.1.min.js'></script>
+<!--<script src='lib/jquery.sticky.js'></script>-->
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src='src/Ractive.js'></script>
+<script src='src/main.js'></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body{
+    text-align: center;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    background: #efefef;
+    font-family: Arial;
+}
+
+.left{
+    float:left;
+}
+
+.header{
+
+    width:100%;
+    height:80px;
+    background-color: #ffcc00;
+    border:1px solid red;
+
+}
+
+.select-graduation-year{
+    width: 240px;
+    height: 34px;
+    overflow: hidden;
+    background: url(down_arrow_select.jpg) no-repeat right #ddd;
+    border: 1px solid #ccc;
+}
+
+.select-graduation-year select {
+    background: transparent;
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+}
+
+.job-selection{
+    border:1px solid red;
+}
+
+.results{
+    border:1px solid red;
+    width:90%;
+    margin: auto;
+}
+
+.logo-container{
+    background-color: #ff0000;
+    width:200px;
+}
+
+.search{
+    background-color: #efefef;
+    height:200px;
+
+}
+
+.search-buttons{
+    border:1px solid red;
+    width:80%;
+    margin:auto;
+    height:200px;
+}
+
+.column{
+    border:1px soild green;
+    height:50px;
+    width:25%;
+}
+
+.cell{
+    border:1px solid blue;
+    height:40px;
+    /*width:300px;*/
+}
+
+.site-description-container{
+    border:1px solid green;
+
+}
+
+.site-description{
+    border:1px solid mediumvioletred;
+    margin:auto;
+
+    width:70%;
+
+}
+
+.search{
+    border:1px solid red;
+
+}
+
+.search-input{
+
+}
