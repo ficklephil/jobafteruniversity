@@ -6,35 +6,7 @@ var ractive = new Ractive({
     data: {greeting:'hello',recipient:'sdsds',estimatedPay:580,jobTitle:'Job Title Holder',qualificationsRequired:'Qualifications Holder',workFutureJobs:2323,jobs:jobMatches,percentSkillsShortages:20,percentHardToFill:20,percentHardToFillIsSkillsShortages:21,unemploymentRate:6}
 });
 
-$(function() {
-    var availableTags = [
-        "ActionScript",
-        "AppleScript",
-        "Asp",
-        "BASIC",
-        "C",
-        "C++",
-        "Clojure",
-        "COBOL",
-        "ColdFusion",
-        "Erlang",
-        "Fortran",
-        "Groovy",
-        "Haskell",
-        "Java",
-        "JavaScript",
-        "Lisp",
-        "Perl",
-        "PHP",
-        "Python",
-        "Ruby",
-        "Scala",
-        "Scheme"
-    ];
-    $( "#graduation-input" ).autocomplete({
-        source: availableTags
-    });
-});
+
 
 console.log('gets to search');
 $( "#career-input" ).autocomplete({
@@ -101,77 +73,7 @@ $( "#career-input" ).autocomplete({
 
         //think about putting work futures in here when finished.
         //getWorkFuture(soc);
-
-
-
     }
-
-});
-
-
-ractive.on( 'search', function( event ){
-//    console.log('gets to search');
-//    $( "#career-input" ).autocomplete({
-//        source: function( request, response ) {
-//            $.ajax({
-//                url: "http://api.lmiforall.org.uk/api/v1/soc/search?q="+request.term,
-//                dataType: "jsonp",
-//                data: {
-//                    featureClass: "P",
-//                    style: "full",
-//                    maxRows: 12
-//                },
-//                success: function( data ) {
-//                    response( $.map( data, function( item ) {
-//                        return {
-//                            label: item.title,
-//                            value: item.soc
-//                        }
-//                    }));
-//                }
-//            });
-//        },
-//        minLength: 4,
-//        delay: 200,
-//        select: function( event, ui ) {
-////        log( ui.item ?
-////            "Selected: " + ui.item.label :
-////            "Nothing selected, input was " + this.value);
-//        },
-//        open: function() {
-////        $( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
-//        },
-//        close: function() {
-////        $( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
-//        }
-//    });
-
-
-
-
-    //we need to clear list
-
-//    jobMatches.splice(0);
-//
-//    console.log($('.search-input').val());
-//    var searchInput = $('.search-input').val();
-
-   // searchForJob(searchInput);
-});
-
-ractive.on( 'select-job', function( event ){
-
-    node = event.node;
-    soc = node.getAttribute( 'value' );
-    console.log(node.getAttribute( 'value' ));
-
-    getEstimatedPay(soc);
-    getExtendedJobInfomation(soc);
-    getWorkFuture(soc);
-
-    console.log('get Skills shortages');
-    getSkillsShortages(soc,1);
-
 });
 
 function searchForJob(searchInput){
@@ -355,30 +257,13 @@ function scrollToStart(){
 //drawChart();
 
 function createDataForChart(json){
-    console.log(JSON.stringify(json));
-
-    //for each item.year add a year to the 'labels'
-    //for each item.employment add a data to the dataset
-
     var year=[];
     var predictedNumberEmployed=[];
 
     for(var i=0;i<json.predictedEmployment.length;i++){
         year.push(json.predictedEmployment[i].year);
-
-        console.log('predicted employment employment' + json.predictedEmployment[i].employment );
         predictedNumberEmployed.push(parseInt(json.predictedEmployment[i].employment));
-
-        console.log('parse int' + parseInt(json.predictedEmployment[i].employment));
-        //convert to number
-
-
-
-
     }
-
-
-
 
     var data = {
         labels : year,
@@ -401,12 +286,9 @@ function drawChart(data){
     //Get the context of the canvas element we want to select
     var ctx = document.getElementById("myChart").getContext("2d");
 
-
-
     var options = {
         bezierCurve : false
     }
 
-        var myNewChart = new Chart(ctx).Line(data,options);             //watch out here for memory issues
-
+    var myNewChart = new Chart(ctx).Line(data,options);             //watch out here for memory issues
 }
