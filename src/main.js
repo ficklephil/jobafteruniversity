@@ -3,12 +3,31 @@ var jobMatches = [];
 var ractive = new Ractive({
     el:'container',
     template:'#myTemplate',
-    data: {greeting:'hello',recipient:'sdsds',estimatedPay:580,jobTitle:'Job Title Holder',qualificationsRequired:'Qualifications Holder',workFutureJobs:2323,jobs:jobMatches,percentSkillsShortages:20,percentHardToFill:20,percentHardToFillIsSkillsShortages:21,unemploymentRate:6}
+    data: {greeting:'hello',recipient:'sdsds',estimatedPay:580,jobTitle:'Job Title Holder',
+        qualificationsRequired:'Qualifications Holder',workFutureJobs:2323,jobs:jobMatches,
+        percentSkillsShortages:20,percentHardToFill:20,percentHardToFillIsSkillsShortages:21,unemploymentRate:6,
+        yearsAtUniversity:0,graduationYear:0,jobPercentageChange:0,employedCurrently:0,employedGraduationYear:0,jobIncreaseOrDecrease:'no data'}
 });
 
 
+$(function() {
+    var availableTags = [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020"
+    ];
+    $( "#graduation-input" ).autocomplete({
+        source: availableTags,
+        select:function( event, ui){
+            console.log('Soc code of selected item is ' + $("#graduation-input").val());
+        }
+    });
+});
 
-console.log('gets to search');
 $( "#career-input" ).autocomplete({
     source: function( request, response ) {
         $.ajax({
@@ -32,25 +51,7 @@ $( "#career-input" ).autocomplete({
     minLength: 3,
     delay: 200,
     select: function( event, ui ) {
-//        console.log( ui.item ?
-//            "Selected: " + ui.item.label :
-//            "Nothing selected, input was " + this.value);
-
-        //what we want here is the soc code
-        console.log('scroll to anchor');
-        console.log('Soc code of selected item is ' + ui.item.soc);
-        var soc = ui.item.soc;
-        getExtendedJobInfomation(soc);
-        getSkillsShortages(soc,1);
-        getUnemployment(soc);
-        getWorkFuture(soc);
-
-
-        scrollToStart();
-
-
-//        $('.search').scrollTo(500);
-//        scrollToAnchor('.career-data');
+        search(ui.item.soc);
     },
     open: function() {
         console.log('open');
@@ -75,6 +76,31 @@ $( "#career-input" ).autocomplete({
         //getWorkFuture(soc);
     }
 });
+
+function search(soc){
+
+    getExtendedJobInfomation(soc);
+    getSkillsShortages(soc,1);
+    getUnemployment(soc);
+    getWorkFuture(soc);
+    scrollToStart();
+
+
+    setYearsAtUniversity(getGraduationYear(), getCurrentYear());
+    ractive.set("graduationYear", getGraduationYear());
+}
+
+function setYearsAtUniversity(startYear, finishYear){
+    ractive.set('yearsAtUniversity', startYear - finishYear);
+}
+
+function getCurrentYear(){
+    return 2014;
+}
+
+function getGraduationYear(){
+    return parseInt($("#graduation-input").val());
+}
 
 function searchForJob(searchInput){
     $.ajax({
@@ -235,7 +261,7 @@ function getWorkFuture(soc){
         success: function(json) {
 //            console.log('Work Future : ' + JSON.stringify(json));
             drawChart(createDataForChart(json));
-
+            calcJobPercentageChange(json, getCurrentYear(), getGraduationYear());
 
 //           ractive.set('workFutureJobs', json.predictedEmployment[3].employment)
         },
@@ -244,6 +270,50 @@ function getWorkFuture(soc){
             alert('I have no JSON');
         }
     });
+}
+
+function calcJobPercentageChange(json, currentYear, graduationYear){
+
+    console.log('json' + JSON.stringify(json));
+
+    var employedCurrently=0;
+    var employedGraduationYear=0;
+
+    for(var i=0;i < json.predictedEmployment.length;i++){
+        var year = parseInt(json.predictedEmployment[i].year);
+        var numberEmployed = parseInt(json.predictedEmployment[i].employment);
+
+        if(year == currentYear){
+            employedCurrently = numberEmployed;
+            console.log('Currently Employed set as ' + employedCurrently);
+        }else if(year == graduationYear){
+            employedGraduationYear = numberEmployed;
+            console.log('In Graduation year Employed set as ' + employedGraduationYear);
+        }
+    }
+
+    setJobPercentageChange(calcPercentageChange(employedCurrently, employedGraduationYear));
+    setJobIncreaseOrDecrease(calcJobIncreaseOrDecrease(employedCurrently, employedGraduationYear));
+
+    ractive.set("employedCurrently", employedCurrently);
+    ractive.set("employedGraduationYear", employedGraduationYear);
+
+}
+
+function calcPercentageChange(employedCurrently,employedGraduationYear){
+    return ((employedGraduationYear-employedCurrently)/employedCurrently)*100;
+}
+
+function calcJobIncreaseOrDecrease(employedCurrently,employedGraduationYear){
+    return (employedCurrently <= employedGraduationYear)? "increased" : "decreased";
+}
+
+function setJobIncreaseOrDecrease(increaseOrDecrease){
+    ractive.set("jobIncreaseOrDecrease", increaseOrDecrease);
+}
+
+function setJobPercentageChange(percentage){
+    ractive.set("jobPercentageChange", percentage);
 }
 
 function scrollToStart(){

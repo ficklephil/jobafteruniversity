@@ -24,7 +24,7 @@ $region-width:210px;
 
 @mixin roboto-light() {
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 @mixin pacifico(){
@@ -80,7 +80,7 @@ body{
   background:$background-color-light;
 
   @include roboto-light();
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .header {

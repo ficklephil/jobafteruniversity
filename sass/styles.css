@@ -16,8 +16,8 @@ body {
   margin: 0px 0px 0px 0px;
   background: #f8f8f8;
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-weight: 100; }
+  font-weight: 300;
+  font-weight: 300; }
 
 .header {
   top: 0;
@@ -104,7 +104,7 @@ body {
   text-align: left; }
   .ui-menu .ui-menu-item a {
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     color: #efefef;
     font-size: 1em;
     height: 40px;
@@ -112,7 +112,7 @@ body {
     padding-left: 17px; }
   .ui-menu .ui-menu-item a:link {
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     color: #ffcc00;
     font-size: 1em;
     height: 40px;
@@ -120,7 +120,7 @@ body {
     padding-left: 17px; }
   .ui-menu .ui-menu-item a:visited {
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     color: #ffcc00;
     font-size: 1em;
     height: 40px;
@@ -128,7 +128,7 @@ body {
     padding-left: 17px; }
   .ui-menu .ui-menu-item a:hover {
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     color: #ffcc00;
     font-size: 1em;
     height: 40px;
@@ -136,7 +136,7 @@ body {
     padding-left: 17px; }
   .ui-menu .ui-menu-item a:active {
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     color: #ffcc00;
     font-size: 1em;
     height: 40px;
@@ -144,7 +144,7 @@ body {
     padding-left: 17px; }
   .ui-menu .ui-menu-item a:selected {
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     color: #ffcc00;
     font-size: 1em;
     height: 40px;
@@ -159,7 +159,7 @@ body {
   text-align: left; }
   .search .title {
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     height: 35px;
     padding-top: 10px;
     background-color: #f0f0f0;
@@ -171,7 +171,7 @@ body {
     text-align: left; }
   .search input {
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 1.6em;
     height: 50px;
     background: transparent;
