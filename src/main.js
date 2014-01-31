@@ -313,7 +313,11 @@ function setJobIncreaseOrDecrease(increaseOrDecrease){
 }
 
 function setJobPercentageChange(percentage){
-    ractive.set("jobPercentageChange", percentage);
+
+    console.log(percentage);
+    console.log(Math.round(percentage));
+
+    ractive.set("jobPercentageChange", Math.round(percentage));
 }
 
 function scrollToStart(){
@@ -339,11 +343,13 @@ function createDataForChart(json){
         labels : year,
         datasets : [
             {
-                fillColor : "rgba(255,204,0,0.45)",
+//                fillColor : "rgba(255,204,0,0.45)",
 //                fillColor : "rgba(220,220,220,0.5)",
-                strokeColor : "#1b1b1b",
+//                fillColor : "rgba(206,0,67,0.9)",
+                fillColor : "#CE0043",
+                strokeColor : "#CE0043",
                 pointColor : "#CE0043",
-                pointStrokeColor : "#fff",
+                pointStrokeColor : "#CE0043",
                 data : predictedNumberEmployed
             },
         ]
@@ -360,5 +366,5 @@ function drawChart(data){
         bezierCurve : false
     }
 
-    var myNewChart = new Chart(ctx).Line(data,options);             //watch out here for memory issues
+    var myNewChart = new Chart(ctx).Bar(data,options);             //watch out here for memory issues
 }

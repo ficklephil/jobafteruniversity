@@ -4,15 +4,15 @@
     <list default="true" id="bdab9eca-1bd4-4d41-9439-55c420dcc04b" name="Default" comment="" />
     <ignored path="jobafteruni.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1391032690234" ignored="false" />
+    <file path="/index.html" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1391125503091" ignored="false" />
     <file path="/style.css" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1388615511159" ignored="false" />
     <file path="/Dummy.txt" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1387879633125" ignored="false" />
-    <file path="/main.js" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1391033102281" ignored="false" />
+    <file path="/main.js" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1391127120154" ignored="false" />
     <file path="/index_testing_job_selection.html" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1389051886390" ignored="false" />
-    <file path="/styles.scss" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1390947335078" ignored="false" />
+    <file path="/styles.scss" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1391126595060" ignored="false" />
     <file path="/jquery-ui.css" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1389738934437" ignored="false" />
     <file path="/indexNew.html" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1390940409562" ignored="false" />
-    <file path="$PROJECT_DIR$/sass/styles.css" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1391033340031" ignored="false" />
+    <file path="$PROJECT_DIR$/sass/styles.css" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1391126928763" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,22 +31,22 @@
     <favorites_list name="jobafteruni" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6603023">
+    <splitter split-orientation="horizontal" split-proportion="0.50119334">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="189" column="35" selection-start="6050" selection-end="6050" vertical-scroll-proportion="-14.115385">
+                <state line="188" column="64" selection-start="6016" selection-end="6016" vertical-scroll-proportion="29.26923">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="307" column="82" selection-start="9651" selection-end="9651" vertical-scroll-proportion="0.8563734">
+                <state line="365" column="27" selection-start="11154" selection-end="11154" vertical-scroll-proportion="0.7371134">
                   <folding />
                 </state>
               </provider>
@@ -56,10 +56,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="styles.scss" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="styles.scss" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="82" column="16" selection-start="2483" selection-end="2483" vertical-scroll-proportion="0.6082474">
+                <state line="25" column="22" selection-start="529" selection-end="535" vertical-scroll-proportion="0.32854578">
                   <folding />
                 </state>
               </provider>
@@ -83,8 +83,8 @@
         <option value="$PROJECT_DIR$/sass/jquery-ui.css" />
         <option value="$PROJECT_DIR$/indexNew.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/sass/styles.scss" />
+        <option value="$PROJECT_DIR$/src/main.js" />
       </list>
     </option>
   </component>
@@ -154,7 +154,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="774" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -236,7 +236,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/main.js</url>
-          <line>336</line>
+          <line>339</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
@@ -325,21 +325,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="35" selection-start="6050" selection-end="6050" vertical-scroll-proportion="-14.115385">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="307" column="82" selection-start="9651" selection-end="9651" vertical-scroll-proportion="0.8563734">
+        <state line="188" column="64" selection-start="6016" selection-end="6016" vertical-scroll-proportion="29.26923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="16" selection-start="2483" selection-end="2483" vertical-scroll-proportion="0.6082474">
+        <state line="25" column="22" selection-start="529" selection-end="535" vertical-scroll-proportion="0.32854578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="365" column="27" selection-start="11154" selection-end="11154" vertical-scroll-proportion="0.7371134">
           <folding />
         </state>
       </provider>

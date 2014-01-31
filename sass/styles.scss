@@ -13,7 +13,7 @@ $background-color-question:#F0F0F0;
 $background-color-box:#ffffff;
 
 $title-background-color:#1b1b1b;
-$title-text-color:#cccccc;
+$title-text-color:#efefef;
 $title-description-background-color:#333333;
 
 $border:1px solid lightgrey;
@@ -535,20 +535,20 @@ body{
     }
 
     .career-data-item{
-      @include borderhelper();
+      //@include borderhelper();
       background-color:$lightest-color;
       padding: 0px 10px 10px 10px;
       margin-top: 70px;
 
       .career-data-item-header{
         //@include borderhelper();
-        border:1px solid red;
+        //border:1px solid red;
         height:121px;
 
         .title{
           float:left;
           @include pacifico();
-          @include borderhelper();
+          //@include borderhelper();
           color:$title-text-color;
           background-color:$title-background-color;
           padding: 2px 25px 9px 20px;
@@ -556,27 +556,29 @@ body{
 
         .description{
           float:left;
-          @include borderhelper();
+          //@include borderhelper();
           //padding-left: 25px;
           //padding-top: 41px;
           padding: 41px 0px 0px 25px;
-          font-size: 1.7em;
+          font-size: 1.3em;
+          //@include pacifico;
           font-weight: 100;
+          color: #787878;
         }
       }
 
       .career-data-item-content{
-        @include borderhelper();
+        //@include borderhelper();
         padding: 25px 55px 25px 55px;
         background-color:$title-description-background-color;
         font-size: 1.5em;
-        font-weight: 300;
+        font-weight: 100;
         color: #cccccc ;
       }
 
       .career-data-dual-item-content{
 
-        border:1px solid red;
+        //border:1px solid red;
 
         .test-div{
           border:1px solid blue;
@@ -593,13 +595,14 @@ body{
         //height:358px;
         .salary-data{
           float:left;
-          @include borderhelper();
+          //@include borderhelper();
           width:42%;
           //height:300px;
           background-color:$primary-color;
           color:#efefef;
           //padding: 100px 25px 25px 25px;
           font-size: 1.5em;
+          font-weight:100;
           //position: relative;
           //display: inline-block;
           padding-left: 50px;
@@ -614,12 +617,13 @@ body{
           float:right;
           //@include borderhelper();
           width:47%;
-          border:1px solid blue;
+          //border:1px solid blue;
           height:300px;
 
           #myChart{
             margin:auto;
-            border:1px solid yellow;
+            //border:1px solid yellow;
+            margin-top:15px;
           }
         }
 
