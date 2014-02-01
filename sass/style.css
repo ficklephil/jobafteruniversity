@@ -1,102 +1,418 @@
-body{
-    text-align: center;
-    padding:0px 0px 0px 0px;
-    margin:0px 0px 0px 0px;
-    background: #efefef;
-    font-family: Arial;
-}
+h2 {
+  font-weight: 300;
+  font-size: 2em; }
 
-.left{
-    float:left;
-}
+h1 {
+  font-weight: 100;
+  font-size: 2em; }
 
-.header{
+h3 {
+  font-weight: 100; }
 
-    width:100%;
-    height:80px;
-    background-color: #ffcc00;
-    border:1px solid red;
+body {
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  background: #f8f8f8;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-weight: 300; }
 
-}
+.header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 67px;
+  background-color: white;
+  border-bottom: 1px solid lightgrey; }
+  .header .set-region {
+    border: 1px solid green;
+    float: right;
+    margin-right: 25px;
+    margin-top: 17px; }
+  .header .newlogo {
+    border: 1px solid red;
+    width: 170px;
+    height: 100px;
+    float: left; }
+  .header .logo {
+    background-color: #ce0043;
+    color: white;
+    width: 200px;
+    height: 99%;
+    margin-left: 15px;
+    padding-top: 1px; }
+    .header .logo h1 {
+      font-weight: 300; }
 
-.select-graduation-year{
-    width: 240px;
-    height: 34px;
-    overflow: hidden;
-    background: url(down_arrow_select.jpg) no-repeat right #ddd;
-    border: 1px solid #ccc;
-}
+.centerlogo {
+  height: 189px;
+  width: 480px;
+  margin: auto;
+  background-image: url("../images/logo.jpg");
+  background-repeat: no-repeat;
+  margin-top: 150px;
+  margin-bottom: 35px; }
 
-.select-graduation-year select {
+.footer {
+  margin-top: 30px;
+  border-top: 1px solid lightgray;
+  height: 50px;
+  width: 100%; }
+
+.ui-corner-all {
+  border: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; }
+
+.ui-widget-content {
+  margin-top: 10px;
+  border: 0px solid red;
+  background-color: #efefef; }
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  border: 1px solid #efefef;
+  background: #343434;
+  font-weight: 100;
+  color: #efefef; }
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+  border: 1px solid #aaaaaa;
+  background: #ffffff;
+  font-weight: 100;
+  color: #212121; }
+
+.ui-menu .ui-menu-item a.ui-state-focus,
+.ui-menu .ui-menu-item a.ui-state-active {
+  font-weight: 100;
+  margin: -1px; }
+
+.ui-menu .ui-menu-item {
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #1b1b1b;
+  width: 680px;
+  text-align: left; }
+  .ui-menu .ui-menu-item a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #efefef;
+    font-size: 1em;
+    height: 40px;
+    padding-top: 16px;
+    padding-left: 17px; }
+  .ui-menu .ui-menu-item a:link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #ffcc00;
+    font-size: 1em;
+    height: 40px;
+    padding-top: 16px;
+    padding-left: 17px; }
+  .ui-menu .ui-menu-item a:visited {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #ffcc00;
+    font-size: 1em;
+    height: 40px;
+    padding-top: 16px;
+    padding-left: 17px; }
+  .ui-menu .ui-menu-item a:hover {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #ffcc00;
+    font-size: 1em;
+    height: 40px;
+    padding-top: 16px;
+    padding-left: 17px; }
+  .ui-menu .ui-menu-item a:active {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #ffcc00;
+    font-size: 1em;
+    height: 40px;
+    padding-top: 16px;
+    padding-left: 17px; }
+  .ui-menu .ui-menu-item a:selected {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #ffcc00;
+    font-size: 1em;
+    height: 40px;
+    padding-top: 16px;
+    padding-left: 17px; }
+
+.search {
+  border: 1px solid blue;
+  margin-left: 200px;
+  width: 73%;
+  min-width: 920px;
+  text-align: left; }
+  .search .title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    height: 35px;
+    padding-top: 10px;
+    background-color: #f0f0f0;
+    color: #818487;
+    font-weight: 300;
+    padding-left: 17px; }
+  .search .ui-autocomplete {
+    border: 10px solid blue;
+    text-align: left; }
+  .search input {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.6em;
+    height: 50px;
     background: transparent;
-    width: 268px;
-    padding: 5px;
-    font-size: 16px;
-    line-height: 1;
-    border: 0;
-    border-radius: 0;
-    height: 34px;
-    -webkit-appearance: none;
-}
+    color: #818487;
+    padding-left: 17px; }
+  .search .input-border-left {
+    float: left;
+    height: 36px;
+    width: 6px;
+    margin-top: 68px;
+    background-color: #d5d5d5; }
+  .search .input-border-right {
+    float: left;
+    height: 36px;
+    width: 6px;
+    margin-top: 68px;
+    background-color: #d5d5d5;
+    margin-right: 25px; }
+  .search .career-field-container .career-field {
+    float: left;
+    width: 680px;
+    border-bottom: 7px solid #d5d5d5; }
+    .search .career-field-container .career-field input {
+      background: #f0f0f0;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #f0f0f0 0%, white 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f0f0), color-stop(100%, white));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #f0f0f0 0%, white 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #f0f0f0 0%, white 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #f0f0f0 0%, white 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, #f0f0f0 0%, white 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#ffffff',GradientType=0 );
+      /* IE6-9 */
+      width: 663px;
+      float: left;
+      border: 0px solid red; }
+  .search .career-field-container:hover .input-border-left {
+    background-color: #ce0043; }
+  .search .career-field-container:hover .input-border-right {
+    background-color: #ce0043; }
+  .search .career-field-container:hover .career-field {
+    border-bottom: 7px solid #ce0043; }
+  .search .graduate-date-field-container .graduate-date-field {
+    float: left;
+    width: 160px;
+    border-bottom: 7px solid #d5d5d5; }
+    .search .graduate-date-field-container .graduate-date-field input {
+      background: #f0f0f0;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #f0f0f0 0%, white 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f0f0), color-stop(100%, white));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #f0f0f0 0%, white 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #f0f0f0 0%, white 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #f0f0f0 0%, white 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, #f0f0f0 0%, white 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#ffffff',GradientType=0 );
+      /* IE6-9 */
+      width: 143px;
+      border: 0px solid red; }
+  .search .graduate-date-field-container:hover .input-border-left {
+    background-color: #ce0043; }
+  .search .graduate-date-field-container:hover .input-border-right {
+    background-color: #ce0043; }
+  .search .graduate-date-field-container:hover .graduate-date-field {
+    border-bottom: 7px solid #ce0043; }
+  .search .graduate-date-field-container:hover input {
+    border: 0px solid red; }
+  .search input:focus {
+    outline: 0px solid red;
+    color: #ce0043; }
+  .search .region-field-container .region-field {
+    width: 210px;
+    float: left;
+    border-bottom: 7px solid #d5d5d5; }
+  .search .region-field-container input {
+    background: #f0f0f0;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f0f0f0 0%, white 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f0f0), color-stop(100%, white));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f0f0f0 0%, white 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f0f0f0 0%, white 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f0f0f0 0%, white 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #f0f0f0 0%, white 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#ffffff',GradientType=0 );
+    /* IE6-9 */
+    width: 193px;
+    float: left;
+    border: 0px solid red; }
+  .search .region-date-field-container:hover .input-border-left {
+    background-color: #666666; }
+  .search .region-date-field-container:hover .input-border-right {
+    background-color: #666666; }
+  .search .region-date-field-container:hover .region-date-field {
+    border-bottom: 7px solid #666666; }
+  .search .region-date-field-container:hover input {
+    border: 0px solid red; }
 
-.job-selection{
-    border:1px solid red;
-}
+.strapline {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.6em;
+  color: #ce0043;
+  margin-top: 50px;
+  margin-bottom: 50px; }
 
-.results{
-    border:1px solid red;
-    width:90%;
+.site-description-container {
+  border-top: 1px solid lightgrey;
+  padding-top: 30px;
+  text-align: left;
+  font-weight: 300;
+  font-size: 1em;
+  background-color: #efefef;
+  color: #676767; }
+  .site-description-container .site-description {
+    height: 325px;
+    width: 85%;
+    margin: auto; }
+    .site-description-container .site-description .column-left {
+      width: 48%;
+      float: left; }
+    .site-description-container .site-description .column-right {
+      float: right;
+      width: 48%; }
+      .site-description-container .site-description .column-right .slogan {
+        color: #ce0043; }
+
+.career-data-container {
+  background: #efefef;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #efefef 0%, white 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #efefef), color-stop(100%, white));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #efefef 0%, white 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #efefef 0%, white 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #efefef 0%, white 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #efefef 0%, white 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */ }
+  .career-data-container .career-data {
+    width: 90%;
     margin: auto;
-}
-
-.logo-container{
-    background-color: #ff0000;
-    width:200px;
-}
-
-.search{
-    background-color: #efefef;
-    height:200px;
-
-}
-
-.search-buttons{
-    border:1px solid red;
-    width:80%;
-    margin:auto;
-    height:200px;
-}
-
-.column{
-    border:1px soild green;
-    height:50px;
-    width:25%;
-}
-
-.cell{
-    border:1px solid blue;
-    height:40px;
-    /*width:300px;*/
-}
-
-.site-description-container{
-    border:1px solid green;
-
-}
-
-.site-description{
-    border:1px solid mediumvioletred;
-    margin:auto;
-
-    width:70%;
-
-}
-
-.search{
-    border:1px solid red;
-
-}
-
-.search-input{
-
-}
+    text-align: left; }
+    .career-data-container .career-data .title {
+      padding-top: 1px;
+      padding-bottom: 1px;
+      padding-right: 0px;
+      text-align: center;
+      color: #ce0043; }
+    .career-data-container .career-data .career-data-item {
+      background-color: white;
+      padding: 0px 10px 10px 10px;
+      margin-top: 70px; }
+      .career-data-container .career-data .career-data-item .career-data-item-header {
+        height: 121px; }
+        .career-data-container .career-data .career-data-item .career-data-item-header .title {
+          float: left;
+          font-family: 'Pacifico', cursive;
+          color: #efefef;
+          background-color: #1b1b1b;
+          padding: 2px 25px 9px 20px; }
+        .career-data-container .career-data .career-data-item .career-data-item-header .description {
+          float: left;
+          padding: 41px 0px 0px 25px;
+          font-size: 1.3em;
+          font-weight: 100;
+          color: #787878; }
+      .career-data-container .career-data .career-data-item .career-data-item-content {
+        padding: 25px 55px 25px 55px;
+        background-color: #333333;
+        font-size: 1.5em;
+        font-weight: 100;
+        color: #cccccc; }
+      .career-data-container .career-data .career-data-item .career-data-dual-item-content .test-div {
+        border: 1px solid blue;
+        width: 45%; }
+      .career-data-container .career-data .career-data-item .career-data-dual-item-content .test-div-2 {
+        border: 1px solid yellow;
+        width: 45%; }
+      .career-data-container .career-data .career-data-item .career-data-dual-item-content .salary-data {
+        float: left;
+        width: 42%;
+        background-color: #ce0043;
+        color: #efefef;
+        font-size: 1.5em;
+        font-weight: 100;
+        padding-left: 50px;
+        padding-top: 80px;
+        padding-right: 50px;
+        padding-bottom: 100px; }
+      .career-data-container .career-data .career-data-item .career-data-dual-item-content .salary-chart {
+        float: right;
+        width: 47%;
+        height: 300px; }
+        .career-data-container .career-data .career-data-item .career-data-dual-item-content .salary-chart #myChart {
+          margin: auto;
+          margin-top: 15px;
+          width: 515px;
+          height: 335px; }
+    .career-data-container .career-data .skills-shortages-container {
+      border: 1px solid blue;
+      width: 47%;
+      margin-left: 42px;
+      background-color: #efefef;
+      margin-top: 27px;
+      min-height: 160px; }
+      .career-data-container .career-data .skills-shortages-container .number {
+        float: left;
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+        margin-top: 41px;
+        margin-left: 35px;
+        background-color: white; }
+        .career-data-container .career-data .skills-shortages-container .number p {
+          margin-left: 24px;
+          margin-top: 26px;
+          font-size: 1.7em;
+          color: #ce0043; }
+      .career-data-container .career-data .skills-shortages-container .content {
+        float: right;
+        width: 66%;
+        padding: 16px 22px 36px 24px;
+        font-size: 1.2em; }

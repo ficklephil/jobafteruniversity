@@ -1,4 +1,6 @@
 $primary-color: #CE0043;
+$secondary-color: #ffcc00;
+
 $lightest-color:#ffffff;
 
 $input-border-colour:#d5d5d5;
@@ -69,7 +71,7 @@ h1{
 
 h3{
   font-weight: 100;
-  font-size: 1.2em;
+  //font-size: 1.2em;
 }
 
 body{
@@ -502,7 +504,7 @@ body{
 }
 
 .career-data-container{
-  max-width: 1800px;
+  //max-width: 1800px;
 
   //border:1px solid red;
   @include borderhelper();
@@ -624,6 +626,8 @@ body{
             margin:auto;
             //border:1px solid yellow;
             margin-top:15px;
+            width:515px;
+            height:335px;
           }
         }
 
@@ -635,13 +639,14 @@ body{
 
     .skills-shortages-container{
 
-      border:1px solid red;
+      //border:1px solid blue;
       width:47%;
       //height: 235px;
       margin-left:42px;
-      background-color:#cccccc ;
+      background-color:$background-color-medium;
       margin-top: 27px;
 
+      min-height: 160px;
 
 
       .number{
@@ -649,15 +654,15 @@ body{
         border-radius: 50%;
         width: 90px;
         height: 90px;
-        margin-top: 70px;
+        margin-top: 41px;
         margin-left: 35px;
         background-color: $lightest-color;
-
         p{
-          margin-left: 23px;
-          margin-top: 27px;
+          margin-left: 24px;
+          margin-top: 26px;
           font-size: 1.7em;
-          color:#343434;
+          color:$background-color-dark;
+
         }
       }
 
@@ -666,7 +671,7 @@ body{
         //border:1px solid blue;
         width:66%;
         //height: 100%;
-        padding: 7px 0px 10px 24px;
+        padding: 16px 22px 36px 24px;
         font-size: 1.2em;
 
 

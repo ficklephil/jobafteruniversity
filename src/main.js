@@ -187,9 +187,9 @@ function getSkillsShortages(soc,region){
         success: function(json) {
             console.log('ESS Data on Skills Shortages : ' + JSON.stringify(json));
 
-            ractive.set('percentSkillsShortages', json.percentSSV)
-            ractive.set('percentHardToFill', json.percentHTF)
-            ractive.set('percentHardToFillIsSkillsShortages', json.percentHTFisSSV)
+            ractive.set('percentSkillsShortages', parseInt(json.percentSSV));
+            ractive.set('percentHardToFill', parseInt(json.percentHTF));
+            ractive.set('percentHardToFillIsSkillsShortages', parseInt(json.percentHTFisSSV));
         },
         error: function(e) {
             console.log(e.message);
@@ -219,7 +219,7 @@ function getUnemployment(soc){
         success: function(json) {
             console.log('LFS Data on Unemployment : ' + JSON.stringify(json));
 
-          ractive.set('unemploymentRate', json.years[0].unemprate)
+          ractive.set('unemploymentRate', parseInt(json.years[0].unemprate));
         },
         error: function(e) {
             console.log(e.message);
