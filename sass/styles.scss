@@ -1,5 +1,5 @@
 $primary-color: #CE0043;
-$secondary-color: #ffcc00;
+$secondary-color: #4177C1;
 
 $lightest-color:#ffffff;
 
@@ -503,7 +503,7 @@ body{
   }
 }
 
-.career-data-container{
+.job-data-container{
   //max-width: 1800px;
 
   //border:1px solid red;
@@ -517,8 +517,9 @@ body{
   background: linear-gradient(to bottom,  #efefef 0%,#ffffff 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 
-  .career-data{
-    width:90%;
+  .job-data{
+    width:100%;
+    max-width: 1200px;
     margin: auto;
     //border:1px solid blue;
     text-align: left;
@@ -533,19 +534,20 @@ body{
       padding-right: 0px;
       text-align: center;
       color:$primary-color;
+      @include pacifico;
 
     }
 
-    .career-data-item{
+    .job-data-item{
       //@include borderhelper();
       background-color:$lightest-color;
-      padding: 0px 10px 10px 10px;
+      //padding: 0px 10px 10px 10px;  //PLACE BACK IN?
       margin-top: 70px;
 
-      .career-data-item-header{
+      .job-header{
         //@include borderhelper();
         //border:1px solid red;
-        height:121px;
+        min-height:121px;
 
         .title{
           float:left;
@@ -569,58 +571,79 @@ body{
         }
       }
 
-      .career-data-item-content{
+      .job-data-item-content{
         //@include borderhelper();
         padding: 25px 55px 25px 55px;
         background-color:$title-description-background-color;
-        font-size: 1.5em;
+        font-size: 1.6em;
         font-weight: 100;
         color: #cccccc ;
       }
 
-      .career-data-dual-item-content{
+      .job-data-dual-item{
 
-        //border:1px solid red;
-
-        .test-div{
-          border:1px solid blue;
-          //height:200px;
-          width:45%;
-        }
-
-        .test-div-2{
-          border:1px solid yellow;
-          //height:200px;
-          width:45%;
-        }
-
-        //height:358px;
-        .salary-data{
+        @mixin jobDataDualItemLeft(){
           float:left;
-          //@include borderhelper();
-          width:42%;
-          //height:300px;
+          width:40%;
           background-color:$primary-color;
           color:#efefef;
-          //padding: 100px 25px 25px 25px;
           font-size: 1.5em;
           font-weight:100;
-          //position: relative;
-          //display: inline-block;
-          padding-left: 50px;
-          padding-top: 80px;
-          padding-right: 50px;
-          padding-bottom: 100px;
-
-
+          padding: 80px 50px 100px 50px;
         }
 
-        .salary-chart{
+        @mixin jobDataDualItemBottomLeft(){
+          float:left;
+          width:40%;
+          background-color:$primary-color;
+          color:#efefef;
+          font-size: 1.5em;
+          font-weight:100;
+          padding: 80px 50px 100px 50px;
+          margin-top:25px;
+        }
+
+        @mixin jobDataDualItemRight(){
           float:right;
-          //@include borderhelper();
+          width:40%;
+          background-color:$primary-color;
+          color:#efefef;
+          font-size: 1.5em;
+          font-weight:100;
+          padding: 80px 50px 100px 50px;
+        }
+
+        @mixin jobDataDualItemChartRight(){
+          float:right;
           width:47%;
-          //border:1px solid blue;
           height:300px;
+        }
+
+        .salary-data{
+          @include jobDataDualItemLeft();
+          background-color:$primary-color;
+        }
+
+        .money-data{
+          @include jobDataDualItemLeft();
+          background-color:$secondary-color;
+        }
+
+        .money-data-right{
+          border:1px solid red;
+          @include jobDataDualItemRight();
+          background-color:$secondary-color;
+        }
+
+        .money-data-bottom-left{
+          border:1px solid red;
+          @include jobDataDualItemBottomLeft();
+          background-color:$secondary-color;
+        }
+
+
+        .salary-chart{
+          @include jobDataDualItemChartRight();
 
           #myChart{
             margin:auto;
@@ -630,17 +653,13 @@ body{
             height:335px;
           }
         }
-
       }
-
-
-
     }
 
-    .skills-shortages-container{
+    .minor-job-data-item{
 
       //border:1px solid blue;
-      width:47%;
+      //width:47%;
       //height: 235px;
       margin-left:42px;
       background-color:$background-color-medium;
@@ -658,8 +677,8 @@ body{
         margin-left: 35px;
         background-color: $lightest-color;
         p{
-          margin-left: 24px;
-          margin-top: 26px;
+          //margin-left: 24px;
+          //margin-top: 26px;
           font-size: 1.7em;
           color:$background-color-dark;
 
@@ -667,9 +686,9 @@ body{
       }
 
       .content{
-        float:right;
+        //float:right;
         //border:1px solid blue;
-        width:66%;
+        //width:66%;
         //height: 100%;
         padding: 16px 22px 36px 24px;
         font-size: 1.2em;

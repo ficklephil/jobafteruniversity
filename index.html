@@ -148,31 +148,29 @@
 
 <div id='start-content'></div>
 
-<div class='career-data-container'>
-    <div class='career-data'>
+<div class='job-data-container'>
+    <div class='job-data'>
+        <!-- Job title -->
         <div class='title'>
             <h1>{{jobTitle}}</h1>
         </div>
 
-        <!-- Career Data Item -->
-        <div class='career-data-item'>
-            <div class='career-data-item-header'>
+        <!-- Job Data Item -->
+        <div class='job-data-item'>
+            <div class='job-header'>
                 <div class='title'>
                     <h2>Qualifications</h2>
                 </div>
-                <div class='description'>
-                    <!--of {{jobTitle}}-->
-                </div>
             </div>
-            <div class='career-data-item-content'>
+            <div class='job-data-item-content'>
                 <p>{{qualificationsRequired}}</p>
             </div>
         </div>
-        <!-- !Career Data Item -->
+        <!-- !Job Data Item -->
 
-        <!-- Career Data Item -->
-        <div class='career-data-item'>
-            <div class='career-data-item-header'>
+        <!-- Job Data Item -->
+        <div class='job-data-item'>
+            <div class='job-header'>
                 <div class='title'>
                     <h2>Career Future</h2>
                 </div>
@@ -180,23 +178,19 @@
                     graduating in {{graduationYear}}
                 </div>
             </div>
-
-            <div class='career-data-dual-item-content'>
-
+            <div class='job-data-dual-item'>
                 <div class='salary-data'><p>Over the next {{yearsAtUniversity}} years while your at university the amount of {{jobTitle}}
                     roles would of {{jobIncreaseOrDecrease}} by {{jobPercentageChange}}% in London, from {{employedCurrently}} roles this year to {{employedGraduationYear}} in {{graduationYear}}.</p></div>
                 <div class='salary-chart'>
                     <canvas id="myChart" width="515" height="335"></canvas>
                 </div>
-
                 <div style='clear:both'></div>
             </div>
-
         </div>
-        <!-- !Career Data Item -->
+        <!-- !Job Data Item -->
 
-        <!-- Extra Career Data Info Item -->
-        <div class='skills-shortages-container'>
+        <!-- Minor Job Data Info Item -->
+        <div class='minor-job-data-item'>
             <div class='number'>
                 <p>{{percentSkillsShortages}}%</p>
             </div>
@@ -207,9 +201,9 @@
             </div>
             <div style="clear:both;"></div>
         </div>
-        <!-- !Extra Career Data Info Item -->
-        <!-- Extra Career Data Info Item -->
-        <div class='skills-shortages-container'>
+        <!-- !Minor Job Data Info Item -->
+        <!-- Minor Job Data Info Item -->
+        <div class='minor-job-data-item'>
             <div class='number'>
                 <p>{{unemploymentRate}}%</p>
             </div>
@@ -219,7 +213,37 @@
             </div>
             <div style="clear:both;"></div>
         </div>
-        <!-- !Extra Career Data Info Item -->
+        <!-- !Minor Job Data Info Item -->
+
+
+
+        <!-- Job Data Item -->
+        <div class='job-data-item'>
+            <div class='job-header'>
+                <div class='title'>
+                    <h2>Money Future</h2>
+                </div>
+                <div class='description'>
+                    graduating in {{graduationYear}}
+                </div>
+            </div>
+            <div class='job-data-dual-item'>
+                <div class='money-data'><p>The current wage for {{jobTitle}} in London is £{{estimatedPayYearly}}. That's £{{estimatedPayWeekly}} per month, if inflation
+                    is at 5% for the next 4 years, your wage will be £50,000 after 4 years of work, as a graduate starts on.</p></div>
+                <div class='money-data-right'>
+                    <p>The average rent for a person living in a one bed flat in London in 2017 will be £1003 per month, based on inflation.</p>
+                </div>
+                <div style='clear:both'></div>
+                <div class='money-data-bottom-left'><p>The current wage for {{jobTitle}} in London is £{{estimatedPayYearly}}.</p></div>
+            </div>
+        </div>
+        <!-- !Job Data Item -->
+
+
+
+
+
+
 
 
 

@@ -1,9 +1,11 @@
 var jobMatches = [];
 
+//USE LONDON RENTS FROM http://www.voa.gov.uk/
+
 var ractive = new Ractive({
     el:'container',
     template:'#myTemplate',
-    data: {greeting:'hello',recipient:'sdsds',estimatedPay:580,jobTitle:'Job Title Holder',
+    data: {greeting:'hello',recipient:'sdsds',estimatedPayWeekly:0,estimatedPayYearly:0,jobTitle:'Job Title Holder',
         qualificationsRequired:'Qualifications Holder',workFutureJobs:2323,jobs:jobMatches,
         percentSkillsShortages:20,percentHardToFill:20,percentHardToFillIsSkillsShortages:21,unemploymentRate:6,
         yearsAtUniversity:0,graduationYear:0,jobPercentageChange:0,employedCurrently:0,employedGraduationYear:0,jobIncreaseOrDecrease:'no data'}
@@ -83,8 +85,9 @@ function search(soc){
     getSkillsShortages(soc,1);
     getUnemployment(soc);
     getWorkFuture(soc);
-    scrollToStart();
+    getEstimatedPay(soc);
 
+    scrollToStart();
 
     setYearsAtUniversity(getGraduationYear(), getCurrentYear());
     ractive.set("graduationYear", getGraduationYear());
@@ -241,13 +244,23 @@ function getEstimatedPay(soc){
             console.log('Estimated Pay Info : ' + JSON.stringify(json));
             console.log(json.series[0].estpay);
 
-            ractive.set('estimatedPay', json.series[0].estpay)
+            setMoneyFutureData(json);
         },
         error: function(e) {
             console.log(e.message);
             alert('I have no JSON');
         }
     });
+}
+
+const WEEKS_IN_YEAR=52;
+
+function setMoneyFutureData(json){
+
+    var estimatedWeeklyPay = parseInt(json.series[0].estpay);
+
+    ractive.set('estimatedPayWeekly', estimatedWeeklyPay);
+    ractive.set('estimatedPayYearly', estimatedWeeklyPay * WEEKS_IN_YEAR);
 }
 
 function getWorkFuture(soc){
@@ -344,8 +357,6 @@ function createDataForChart(json){
         datasets : [
             {
 //                fillColor : "rgba(255,204,0,0.45)",
-//                fillColor : "rgba(220,220,220,0.5)",
-//                fillColor : "rgba(206,0,67,0.9)",
                 fillColor : "#CE0043",
                 strokeColor : "#CE0043",
                 pointColor : "#CE0043",
@@ -359,12 +370,13 @@ function createDataForChart(json){
 }
 
 function drawChart(data){
-    //Get the context of the canvas element we want to select
-    var ctx = document.getElementById("myChart").getContext("2d");
+    $('#myChart').remove();
+    $('.salary-chart').append('<canvas id="myChart" width="515" height="335"></canvas>');
+    var ctx = $('#myChart').get(0).getContext("2d");
 
     var options = {
         bezierCurve : false
     }
 
-    var myNewChart = new Chart(ctx).Bar(data,options);             //watch out here for memory issues
+    new Chart(ctx).Bar(data,options);             //watch out here for memory issues
 }

@@ -314,7 +314,7 @@ body {
       .site-description-container .site-description .column-right .slogan {
         color: #ce0043; }
 
-.career-data-container {
+.job-data-container {
   background: #efefef;
   /* Old browsers */
   background: -moz-linear-gradient(top, #efefef 0%, white 100%);
@@ -331,73 +331,95 @@ body {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#ffffff',GradientType=0 );
   /* IE6-9 */ }
-  .career-data-container .career-data {
-    width: 90%;
+  .job-data-container .job-data {
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     text-align: left; }
-    .career-data-container .career-data .title {
+    .job-data-container .job-data .title {
       padding-top: 1px;
       padding-bottom: 1px;
       padding-right: 0px;
       text-align: center;
-      color: #ce0043; }
-    .career-data-container .career-data .career-data-item {
+      color: #ce0043;
+      font-family: 'Pacifico', cursive; }
+    .job-data-container .job-data .job-data-item {
       background-color: white;
-      padding: 0px 10px 10px 10px;
       margin-top: 70px; }
-      .career-data-container .career-data .career-data-item .career-data-item-header {
-        height: 121px; }
-        .career-data-container .career-data .career-data-item .career-data-item-header .title {
+      .job-data-container .job-data .job-data-item .job-header {
+        min-height: 121px; }
+        .job-data-container .job-data .job-data-item .job-header .title {
           float: left;
           font-family: 'Pacifico', cursive;
           color: #efefef;
           background-color: #1b1b1b;
           padding: 2px 25px 9px 20px; }
-        .career-data-container .career-data .career-data-item .career-data-item-header .description {
+        .job-data-container .job-data .job-data-item .job-header .description {
           float: left;
           padding: 41px 0px 0px 25px;
           font-size: 1.3em;
           font-weight: 100;
           color: #787878; }
-      .career-data-container .career-data .career-data-item .career-data-item-content {
+      .job-data-container .job-data .job-data-item .job-data-item-content {
         padding: 25px 55px 25px 55px;
         background-color: #333333;
-        font-size: 1.5em;
+        font-size: 1.6em;
         font-weight: 100;
         color: #cccccc; }
-      .career-data-container .career-data .career-data-item .career-data-dual-item-content .test-div {
-        border: 1px solid blue;
-        width: 45%; }
-      .career-data-container .career-data .career-data-item .career-data-dual-item-content .test-div-2 {
-        border: 1px solid yellow;
-        width: 45%; }
-      .career-data-container .career-data .career-data-item .career-data-dual-item-content .salary-data {
+      .job-data-container .job-data .job-data-item .job-data-dual-item .salary-data {
         float: left;
-        width: 42%;
+        width: 40%;
         background-color: #ce0043;
         color: #efefef;
         font-size: 1.5em;
         font-weight: 100;
-        padding-left: 50px;
-        padding-top: 80px;
-        padding-right: 50px;
-        padding-bottom: 100px; }
-      .career-data-container .career-data .career-data-item .career-data-dual-item-content .salary-chart {
+        padding: 80px 50px 100px 50px;
+        background-color: #ce0043; }
+      .job-data-container .job-data .job-data-item .job-data-dual-item .money-data {
+        float: left;
+        width: 40%;
+        background-color: #ce0043;
+        color: #efefef;
+        font-size: 1.5em;
+        font-weight: 100;
+        padding: 80px 50px 100px 50px;
+        background-color: #4177c1; }
+      .job-data-container .job-data .job-data-item .job-data-dual-item .money-data-right {
+        border: 1px solid red;
+        float: right;
+        width: 40%;
+        background-color: #ce0043;
+        color: #efefef;
+        font-size: 1.5em;
+        font-weight: 100;
+        padding: 80px 50px 100px 50px;
+        background-color: #4177c1; }
+      .job-data-container .job-data .job-data-item .job-data-dual-item .money-data-bottom-left {
+        border: 1px solid red;
+        float: left;
+        width: 40%;
+        background-color: #ce0043;
+        color: #efefef;
+        font-size: 1.5em;
+        font-weight: 100;
+        padding: 80px 50px 100px 50px;
+        margin-top: 25px;
+        background-color: #4177c1; }
+      .job-data-container .job-data .job-data-item .job-data-dual-item .salary-chart {
         float: right;
         width: 47%;
         height: 300px; }
-        .career-data-container .career-data .career-data-item .career-data-dual-item-content .salary-chart #myChart {
+        .job-data-container .job-data .job-data-item .job-data-dual-item .salary-chart #myChart {
           margin: auto;
           margin-top: 15px;
           width: 515px;
           height: 335px; }
-    .career-data-container .career-data .skills-shortages-container {
-      width: 47%;
+    .job-data-container .job-data .minor-job-data-item {
       margin-left: 42px;
       background-color: #efefef;
       margin-top: 27px;
       min-height: 160px; }
-      .career-data-container .career-data .skills-shortages-container .number {
+      .job-data-container .job-data .minor-job-data-item .number {
         float: left;
         border-radius: 50%;
         width: 90px;
@@ -405,13 +427,9 @@ body {
         margin-top: 41px;
         margin-left: 35px;
         background-color: white; }
-        .career-data-container .career-data .skills-shortages-container .number p {
-          margin-left: 24px;
-          margin-top: 26px;
+        .job-data-container .job-data .minor-job-data-item .number p {
           font-size: 1.7em;
           color: #655656; }
-      .career-data-container .career-data .skills-shortages-container .content {
-        float: right;
-        width: 66%;
+      .job-data-container .job-data .minor-job-data-item .content {
         padding: 16px 22px 36px 24px;
         font-size: 1.2em; }
