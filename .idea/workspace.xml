@@ -4,15 +4,22 @@
     <list default="true" id="bdab9eca-1bd4-4d41-9439-55c420dcc04b" name="Default" comment="" />
     <ignored path="jobafteruni.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1391461980078" ignored="false" />
+    <file path="/index.html" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1392020608078" ignored="false" />
     <file path="/style.css" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1388615511159" ignored="false" />
-    <file path="/Dummy.txt" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1387879633125" ignored="false" />
-    <file path="/main.js" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1391461073953" ignored="false" />
+    <file path="/Dummy.txt" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1392022951031" ignored="false" />
+    <file path="/main.js" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1391551023281" ignored="false" />
     <file path="/index_testing_job_selection.html" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1389051886390" ignored="false" />
     <file path="/styles.scss" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1391470495859" ignored="false" />
     <file path="/jquery-ui.css" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1389738934437" ignored="false" />
     <file path="/indexNew.html" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1390940409562" ignored="false" />
     <file path="$PROJECT_DIR$/sass/styles.css" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1391472181093" ignored="false" />
+    <file path="$PROJECT_DIR$/../jobafteruniversitynew/index.html" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1392022163921" ignored="false" />
+    <file path="$PROJECT_DIR$/../jobafteruniversitynew/js/main.js" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1391551191000" ignored="false" />
+    <file path="$PROJECT_DIR$/../jobafteruniversitynew/css/style.scss" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1392023756515" ignored="false" />
+    <file path="$PROJECT_DIR$/../jobafteruniversitynew/css/style.css" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1392023757750" ignored="false" />
+    <file path="/style.scss" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1392023756515" ignored="false" />
+    <file path="$PROJECT_DIR$/../jobafteruniversitynew/css/grid.css" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1392021792484" ignored="false" />
+    <file path="/grid.css" changelist="bdab9eca-1bd4-4d41-9439-55c420dcc04b" time="1391725439296" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,13 +38,13 @@
     <favorites_list name="jobafteruni" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5449483">
+    <splitter split-orientation="horizontal" split-proportion="0.38663486">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="159" column="24" selection-start="4733" selection-end="4743" vertical-scroll-proportion="0.035564855">
+                <state line="193" column="30" selection-start="6129" selection-end="6135" vertical-scroll-proportion="0.03057554">
                   <folding />
                 </state>
               </provider>
@@ -46,7 +53,7 @@
           <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="18" selection-start="770" selection-end="777" vertical-scroll-proportion="0.0">
+                <state line="363" column="60" selection-start="11170" selection-end="11170" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -59,7 +66,7 @@
           <file leaf-file-name="styles.scss" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="689" column="22" selection-start="14316" selection-end="14316" vertical-scroll-proportion="0.68058455">
+                <state line="10" column="46" selection-start="173" selection-end="173" vertical-scroll-proportion="0.029209621">
                   <folding />
                 </state>
               </provider>
@@ -123,6 +130,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jobafteruniversitynew" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
@@ -153,8 +161,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1288" height="774" extended-state="0" />
-    <editor active="false" />
+    <frame x="-4" y="-4" width="1288" height="774" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -162,7 +170,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18456642" sideWeight="0.84219" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12560387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14492753" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -317,21 +325,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="18" selection-start="770" selection-end="777" vertical-scroll-proportion="0.0">
+        <state line="363" column="60" selection-start="11170" selection-end="11170" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="24" selection-start="4733" selection-end="4743" vertical-scroll-proportion="0.035564855">
+        <state line="193" column="30" selection-start="6129" selection-end="6135" vertical-scroll-proportion="0.03057554">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="689" column="22" selection-start="14316" selection-end="14316" vertical-scroll-proportion="0.68058455">
+        <state line="10" column="46" selection-start="173" selection-end="173" vertical-scroll-proportion="0.029209621">
           <folding />
         </state>
       </provider>
